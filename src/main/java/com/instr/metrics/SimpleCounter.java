@@ -17,6 +17,7 @@ import static java.util.Objects.requireNonNull;
  * @author Deepan Sathyamoorthy
  */
 public class SimpleCounter implements Counter {
+
     private static final Logger LOG = LogManager.getLogger(SimpleCounter.class);
     private final String name;
     protected final Duration duration;
