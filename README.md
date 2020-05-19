@@ -21,7 +21,7 @@ It supports two types of counter
 * Simple Counter
 * Scheduled Cleaner Counter
 
-##### Simple Counter
+#### Simple Counter
 
 This counter is a simple time based counter, that record the metric by simply adding timestamp to record the increment. 
 It is ideal if you want to record the metrics like ERRORS, HTTP_SERVED
@@ -35,11 +35,11 @@ For every increment, it make sure there is not expired element in the counter
 
 Counter with customizable duration
 
-To retrieve the counter value simply provide the fromTime in UTC
+To retrieve the counter value simply provide the fromTime in UTC. The below code, returns counter metric for last 10 seconds
     
     httpServedCounter.getCount(Instant.now().minusSeconds(10));
 
-##### ScheduledCleanerCounter
+#### ScheduledCleanerCounter
 
 This counter is also time based counter, similar to SimpleCounter, it also records the metric, by adding timestamp to the counter.
 However it creates separate timer task to clean the expired elements from the counter. This is faster compared to SimpleCounter, since it removes the overhead of cleaning the counter to separate thread.

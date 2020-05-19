@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
+ * This test has Thread.sleep() to imitate the duration and test the counter values
  * @author Deepan Sathyamoorthy
  */
 public class SimpleCounterTest {

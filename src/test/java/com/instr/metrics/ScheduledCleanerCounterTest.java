@@ -9,6 +9,7 @@ import java.time.Instant;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
+ * This test has Thread.sleep() to imitate the duration and test the counter values
  * @author Deepan Sathyamoorthy
  */
 class ScheduledCleanerCounterTest {
